@@ -152,7 +152,7 @@ for srcid, lunaantlidc in lunantdictlidc.iteritems():
 			continue
 		for idx, lidcant in enumerate(antdictscan[pid+'_'+srcid]):
 			dist = math.pow(voxcrd[0] - lidcant[3], 2) # z
-			dist = math.pow(voxcrd[1] - lidcant[4], 2) # y
+			dist += math.pow(voxcrd[1] - lidcant[4], 2) # y
 			dist += math.pow(voxcrd[2] - lidcant[5], 2) # x
 			if dist < mindist:
 				mindist = dist
