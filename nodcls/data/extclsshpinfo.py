@@ -68,7 +68,7 @@ for fold in xrange(10):
 		voxcrdlist = []
 		for lunaant in lunaantdict[fname[:-4]]:
 			voxcrd = worldToVoxelCoord(lunaant[:3][::-1], origin, spacing)
-			voxcrd[-1] = sliceim.shape[0] - voxcrd[0] 
+# 			voxcrd[-1] = sliceim.shape[0] - voxcrd[0] 
 			voxcrdlist.append(voxcrd)
 		return voxcrdlist
 	p = Pool(30)
